@@ -1,0 +1,75 @@
+<html>
+
+<body>
+    <div class="menu">
+        <img src="logo.png" alt="" width="270px">
+    </div>
+    <div class="container">
+        <div id="titulo">
+            <h3>To Do <br> List <br> </h3>
+            <button> <a href="#data"> Data: </a></button>
+            <button id="bt1"> <a href="#texto">Crie a sua aqui</a></button>
+        </div>
+        <h3> Quinta-feira </h3>
+    </div>
+    <div class="parte-lista">
+        <div class="container2">
+            <h1 class="subtitulo"> Adicionar Elementos na Lista</h1>
+            <input type="text" class=”nome” placeholder="Seu nome">
+            <input type="text" placeholder="Digite uma tarefa">
+            <input type="text" class=”nome” placeholder="Digite seu sobrenome">
+            <h3> Data: </h3>
+            <button onclick="adicionar()"> + </button>
+            <button onclick="remover()"> - </button>
+        </div>
+        <div id="tarefas">
+        </div>
+    </div>
+    <script>
+        //questão 1
+        //-Troque o tamanho e a fonte do terceiro <h3>. Qualquer tamanho e fonte.
+        const h3 = document.getElementsByTagName("h3")[2];
+        h3.style.fontSize = "30px";
+        h3.style.fontFamily = "Arial";
+        //Questão 2
+        //-- Altere, através da classe, o texto da tag <h1> para Adicionar Tarefas na Lista” e o texto do
+        //segunda tag <h3> para “Teste!”.
+        const h1 = document.getElementsByClassName("subtitulo")[0];
+        h1.innerHTML = "Adicionar Tarefas na Lista";
+
+        //Questão 3 
+        //Pegue a tarefa digitada na caixa <input> e insira na <div> container2.
+        // documen.getElementsByClassName("container2")[0].innerHTML = documet.getElementsByTagName("input")[1].value;
+        //Questão 4
+        //Pegue a tarefa digitada na caixa <input> e insira na <div> container2.
+        const para = document.createElement("p");
+        para.innerHTML = "Elisa";
+        document.getElementsByName("container")[0].appendChild(para);
+        //Questão 5
+        //Crie um botão com o texto “Cancelar”, adicione a uma nova div. Insira a div criada dentro da div tarefas. 
+
+        const botao = documet.createElement("button");
+        botao.innerHTML = "Cancelar";
+        const novadiv = document.createElement("div");
+        novadiv.appendChild(botao);
+        document.getElementById("tarefas").appendChild(novadiv);
+        //Questão 6
+        //Adicione um evento ao botão remover para remover a <div> tarefas ao clicá-lo.
+        const btremover = document.getElementsByTagName("button")[3]
+        btremover.addEventListener("click", function () {
+
+        });
+        //Questão 7
+        //- Crie uma nova imagem com a imagem “pen.jpg” e insira no body do site.
+        const imagem = document.createElement("img");
+        imagem.src = "pen.jpg";
+        document.body.appendChild(image);
+        //Questão 8
+        //Pegue o sobrenome digitado pelo usuário e insira dentro da caixinha <input> nome.
+        document.getElementsByTagName("input")[0].value = document.getElementsByTagName("input")[2].value;
+
+
+    </script>
+</body>
+
+</html>
